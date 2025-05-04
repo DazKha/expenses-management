@@ -1,0 +1,56 @@
+.navbar {
+  background-color: var(--secondary-color);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.nav-links li a:hover {
+  color: var(--accent-color);
+}
+
+.nav-links li.active a {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+}
+
+.user-btn {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.user-btn:hover {
+  background-color: #444;
+}
